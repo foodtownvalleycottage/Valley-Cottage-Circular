@@ -6,6 +6,10 @@
   <title>Foodtown Valley Cottage</title>
 
   <!-- CSS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -16,34 +20,58 @@
     background-image: url("img/header_AdobeStock_142091108_Preview.jpg");
   }
 
+  .myContainer{
+  width:100%;
+  }
+
   </style>
 
 </head>
 <body>
 
-  <nav style="background-color:#004684;" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="foodtown-logo"><img src="img/foodtown_nav-icon.png" height="50" style="margin:6px" /></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="apply.html" id="apply">Apply Here</a></li>
-        <li><a href="index.html" id="circular">Weekly Circular</a></li>
-        <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
-        <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="Nutritionist">Recipes & Nutrition</a></li>
-      </ul>
-
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="apply.html" id="apply">Apply Here</a></li>
-        <li><a href="index.html" id="circular">Weekly Circular</a></li>
-        <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
-        <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="Nutritionist">Recipes & Nutrition</a></li>
-      </ul>
-
+  <nav class="nav" style="background-color:#004684;">
+    <div class="nav-wrapper myContainer">
+        <a id="logo-container" href="index.html" class="foodtown-logo"><img src="img/foodtown_nav-icon.png" height="50" style="margin:6px" /></a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html" id="home">Home</a></li>
+          <li><a href="apply.html" id="apply">Careers</a></li>
+          <li><a href="https://www.foodtown.com/my-store/catering" target="_blank" id="cater">Cater with us</a></li>
+          <li><a href="https://www.foodtown.com/my-store/savings-center/foodtown-digital-coupons" target="_blank" id="coupons">Digital Coupons</a></li>
+          <li><a href="https://www.foodtown.com/weekly-circular" target="_blank" id="circular">Weekly Circular</a></li>
+          <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="nutrition">Recipes & Nutrition</a></li>
+          <li><a href="https://www.foodtown.com/my-account#!/create?intent=card" target="_blank" id="clubcard">Apply for Club Card</a></li>
+          <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
+        </ul>
+        <ul class="sidenav" id="mobile-nav">
+          <li><a href="index.html" id="home">Home</a></li>
+          <li><a href="apply.html" id="apply">Careers</a></li>
+          <li><a href="https://www.foodtown.com/my-store/catering" target="_blank" id="cater">Cater with us</a></li>
+          <li><a href="https://www.foodtown.com/my-store/savings-center/foodtown-digital-coupons" target="_blank" id="coupons">Digital Coupons</a></li>
+          <li><a href="https://www.foodtown.com/weekly-circular" target="_blank" id="circular">Weekly Circular</a></li>
+          <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="nutrition">Recipes & Nutrition</a></li>
+          <li><a href="https://www.foodtown.com/my-account#!/create?intent=card" target="_blank" id="clubcard">Apply for Club Card</a></li>
+          <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
+        </ul>
     </div>
   </nav>
 
+  <div class="section no-pad-bot" id="welcome">
+    <div class="myContainer" style="background-color:#FFF;border-bottom:1px solid #004684">
+      <div class="row">
+        <div class="col s12">
+          <div style="text-align:left;">
+            Welcome, you can <a href="https://www.foodtown.com/my-account#!/login">sign in</a>, <a href="https://www.foodtown.com/my-account#!/create?intent=lookup">create an account</a> or <a href="https://www.foodtown.com/my-account#!/create?intent=card">get a Foodtown Club Card</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
+    <div class="myContainer">
       <br>
       <div class="row center" id="header">
         <a href="index.html">
@@ -56,7 +84,7 @@
   </div>
 
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
+    <div class="myContainer">
 
       <div class="row center">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScn2u5SQKsdOte7cwrFDWnMANoPifuUnED5YKnqHdPO6F_RBw/viewform?embedded=true" width="640" height="1098" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -66,7 +94,7 @@
   </div>
 
   <footer class="page-footer red">
-    <div class="container">
+    <div class="myContainer">
       <div class="row">
         <div class="col l3 s12">
           <h5 class="white-text">Location</h5>
@@ -97,7 +125,7 @@
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
+      <div class="myContainer">
       © 2021
       </div>
     </div>
@@ -107,6 +135,17 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+  </script>
+  <script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    });
+  </script>
 
   </body>
 </html>
