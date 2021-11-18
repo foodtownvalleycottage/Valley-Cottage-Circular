@@ -6,6 +6,10 @@
   <title>Foodtown Valley Cottage</title>
 
   <!-- CSS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -19,11 +23,25 @@
   #steak {
     background-image: url("img/header_AdobeStock_174309231_Preview.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
   }
 
   #bakery {
     background-image: url("img/header_AdobeStock_251969990_Preview.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+  }
+
+  .myContainer{
+  width:100%;
+  }
+
+  @media only screen and (min-width: 993px){
+  nav a.button-collapse {
+    display: block;
+  }
   }
 
   </style>
@@ -31,29 +49,47 @@
 </head>
 <body>
 
-  <nav style="background-color:#004684;" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="foodtown-logo"><img src="img/foodtown_nav-icon.png" height="50" style="margin:6px" /></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="apply.html" id="apply">Apply Here</a></li>
-        <li><a href="index.html" id="circular">Weekly Circular</a></li>
-        <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
-        <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="Nutritionist">Recipes & Nutrition</a></li>
-      </ul>
-
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="apply.html" id="apply">Apply Here</a></li>
-        <li><a href="index.html" id="circular">Weekly Circular</a></li>
-        <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
-        <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="Nutritionist">Recipes & Nutrition</a></li>
-      </ul>
-
+  <nav class="nav" style="background-color:#004684;">
+    <div class="nav-wrapper myContainer">
+        <a id="logo-container" href="index.html" class="foodtown-logo"><img src="img/foodtown_nav-icon.png" height="50" style="margin:6px" /></a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="apply.html" id="apply">Careers</a></li>
+          <li><a href="https://www.foodtown.com/my-store/catering" target="_blank" id="cater">Cater with us</a></li>
+          <li><a href="https://www.foodtown.com/my-store/savings-center/foodtown-digital-coupons" target="_blank" id="coupons">Digital Coupons</a></li>
+          <li><a href="https://www.foodtown.com/weekly-circular" target="_blank" id="circular">Weekly Circular</a></li>
+          <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="nutrition">Recipes & Nutrition</a></li>
+          <li><a href="https://www.foodtown.com/my-account#!/create?intent=card" target="_blank" id="clubcard">Apply for Club Card</a></li>
+          <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
+        </ul>
+        <ul class="sidenav" id="mobile-nav">
+          <li><a href="apply.html" id="apply">Careers</a></li>
+          <li><a href="https://www.foodtown.com/my-store/catering" target="_blank" id="cater">Cater with us</a></li>
+          <li><a href="https://www.foodtown.com/my-store/savings-center/foodtown-digital-coupons" target="_blank" id="coupons">Digital Coupons</a></li>
+          <li><a href="https://www.foodtown.com/weekly-circular" target="_blank" id="circular">Weekly Circular</a></li>
+          <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="nutrition">Recipes & Nutrition</a></li>
+          <li><a href="https://www.foodtown.com/my-account#!/create?intent=card" target="_blank" id="clubcard">Apply for Club Card</a></li>
+          <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
+        </ul>
     </div>
   </nav>
 
+  <div class="section no-pad-bot" id="welcome">
+    <div class="myContainer" style="background-color:#FFF;border-bottom:1px solid #004684">
+      <div class="row">
+        <div class="col s12">
+          <div style="text-align:left;">
+            Welcome, you can <a href="https://www.foodtown.com/my-account#!/login">sign in</a>, <a href="https://www.foodtown.com/my-account#!/create?intent=lookup">create an account</a> or <a href="https://www.foodtown.com/my-account#!/create?intent=card">get a Foodtown Club Card</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
+    <div class="myContainer">
       <br>
       <div class="row center" id="header">
         <a href="index.html">
@@ -66,39 +102,21 @@
   </div>
 
   <div class="section no-pad-bot" id="section">
-    <div class="container" style="background-color:#FFF;" id="steak">
+    <div class="myContainer" style="background-color:#FFF;" id="steak">
       <div class="section">
 
         <div class="row">
-          <div class="col s12 m5">
+          <div class="col s12 m6">
             <div class="row center">
               <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:8%;background-color:#d0383f">Weekly Circular</a>
               <h5 class="center white-text">This Week's Featured Items</h5>
             </div>
           </div>
 
-          <div class="col s12 m7">
-            &nbsp;
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="section no-pad-bot" id="section">
-    <div class="container" style="background-color:#FFF;" id="bakery">
-      <div class="section">
-
-        <div class="row">
-          <div class="col s12 m6">
-            &nbsp;
-          </div>
-
           <div class="col s12 m6">
             <div class="row center">
-              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:10%;background-color:#d0383f">Manager's Specials</a>
-              <h3 class="center black-text">This Week's Featured Items</h3>
+              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:8%;background-color:#004684">Manager's Specials</a>
+              <h5 class="center white-text" style="font-weight:bold;text-shadow: 2px 2px 2px #004684;">This Week's Specials</h5>
             </div>
           </div>
         </div>
@@ -107,17 +125,32 @@
     </div>
   </div>
 
+  <!-- <div class="section no-pad-bot" id="section">
+    <div class="myContainer" style="background-color:#FFF;" id="bakery">
+      <div class="section">
+
+        <div class="row">
+          <div class="col s12">
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+
   <div class="section no-pad-bot" id="section">
-    <div class="container" style="background-color:#004684;">
+    <div class="myContainer" style="background-color:#004684;">
       <div class="section">
 
         <div class="row">
           <div class="col s12 m4">
-            <div class="icon-block">
+            &nbsp;
+            <!-- <div class="icon-block">
               <h1 class="center" style="color:#d0383f"><i class="medium material-icons">attach_money</i></h1>
               <h5 class="center white-text">This Week's Featured Items</h5>
               <p class="light white-text" style="text-align:center">Visit to checkout all of our promotions.</p>
-            </div>
+            </div> -->
           </div>
 
           <div class="col s12 m4">
@@ -136,11 +169,12 @@
           </div>
 
           <div class="col s12 m4">
-            <div class="icon-block">
+            &nbsp;
+            <!-- <div class="icon-block">
               <h1 class="center" style="color:#d0383f"><i class="medium material-icons">local_offer</i></h1>
               <h5 class="center white-text">Weekly Ad</h5>
               <p class="light white-text" style="text-align:center">Click here to view our Weekly Ad</p>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -149,7 +183,7 @@
   </div>
 
   <div class="section no-pad-bot" id="section">
-    <div class="container">
+    <div class="myContainer">
       <div class="section">
 
         <div class="row center">
@@ -166,7 +200,7 @@
 
   <footer class="page-footer red">
 
-    <div class="container">
+    <div class="myContainer">
       <div class="row">
         <div class="col l3 s12">
           <h5 class="white-text">Location</h5>
@@ -198,8 +232,8 @@
     </div>
 
     <div class="footer-copyright">
-      <div class="container">
-      © 2021
+      <div class="myContainer">
+        &nbsp; © 2021
       </div>
     </div>
 
@@ -215,6 +249,11 @@
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
   });
+  </script>
+  <script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    });
   </script>
 
   </body>
