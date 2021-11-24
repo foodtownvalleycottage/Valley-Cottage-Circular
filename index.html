@@ -17,18 +17,15 @@
   <style>
 
   #header {
-    background-image: url("img/header_AdobeStock_142091108_Preview.jpg");
-  }
-
-  #steak {
-    background-image: url("img/header_AdobeStock_174309231_Preview.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("img/foodtown_headerbg_03.jpg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: center top;
     background-size:100%;
   }
 
-  #bakery {
-    background-image: url("img/header_AdobeStock_251969990_Preview.jpg");
+  #steak {
+    background-image: url("img/foodtown_steakbg_02.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:100%;
@@ -36,6 +33,10 @@
 
   .myContainer{
   width:100%;
+  }
+
+  .parallax-container {
+    height:300px;
   }
 
   @media only screen and (min-width: 993px){
@@ -51,28 +52,28 @@
 
   <nav class="nav" style="background-color:#004684;">
     <div class="nav-wrapper myContainer">
-        <a id="logo-container" href="index.html" class="foodtown-logo"><img src="img/foodtown_nav-icon.png" height="50" style="margin:6px" /></a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="apply.html" id="apply">Careers</a></li>
-          <li><a href="https://www.foodtown.com/my-store/catering" target="_blank" id="cater">Cater with us</a></li>
-          <li><a href="https://www.foodtown.com/my-store/savings-center/foodtown-digital-coupons" target="_blank" id="coupons">Digital Coupons</a></li>
-          <li><a href="https://www.foodtown.com/weekly-circular" target="_blank" id="circular">Weekly Circular</a></li>
-          <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="nutrition">Recipes & Nutrition</a></li>
-          <li><a href="https://www.foodtown.com/my-account#!/create?intent=card" target="_blank" id="clubcard">Apply for Club Card</a></li>
-          <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
-        </ul>
-        <ul class="sidenav" id="mobile-nav">
-          <li><a href="apply.html" id="apply">Careers</a></li>
-          <li><a href="https://www.foodtown.com/my-store/catering" target="_blank" id="cater">Cater with us</a></li>
-          <li><a href="https://www.foodtown.com/my-store/savings-center/foodtown-digital-coupons" target="_blank" id="coupons">Digital Coupons</a></li>
-          <li><a href="https://www.foodtown.com/weekly-circular" target="_blank" id="circular">Weekly Circular</a></li>
-          <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="nutrition">Recipes & Nutrition</a></li>
-          <li><a href="https://www.foodtown.com/my-account#!/create?intent=card" target="_blank" id="clubcard">Apply for Club Card</a></li>
-          <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
-        </ul>
+      <a id="logo-container" href="index.html" class="foodtown-logo"><img src="img/foodtown_nav-icon.png" height="50" style="margin:6px" /></a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="apply.html" id="apply">Careers</a></li>
+        <li><a href="https://www.foodtown.com/my-store/catering" target="_blank" id="cater">Cater with us</a></li>
+        <li><a href="https://www.foodtown.com/my-store/savings-center/foodtown-digital-coupons" target="_blank" id="coupons">Digital Coupons</a></li>
+        <li><a href="https://www.foodtown.com/weekly-circular" target="_blank" id="circular">Weekly Circular</a></li>
+        <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="nutrition">Recipes & Nutrition</a></li>
+        <li><a href="https://www.foodtown.com/my-account#!/create?intent=card" target="_blank" id="clubcard">Apply for Club Card</a></li>
+        <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
+      </ul>
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="apply.html" id="apply">Careers</a></li>
+        <li><a href="https://www.foodtown.com/my-store/catering" target="_blank" id="cater">Cater with us</a></li>
+        <li><a href="https://www.foodtown.com/my-store/savings-center/foodtown-digital-coupons" target="_blank" id="coupons">Digital Coupons</a></li>
+        <li><a href="https://www.foodtown.com/weekly-circular" target="_blank" id="circular">Weekly Circular</a></li>
+        <li><a href="https://www.foodtown.com/easy-to-eat-well" target="_blank" id="nutrition">Recipes & Nutrition</a></li>
+        <li><a href="https://www.foodtown.com/my-account#!/create?intent=card" target="_blank" id="clubcard">Apply for Club Card</a></li>
+        <li><a href="https://www.foodtown.com/welcome-to-foodtown-on-the-go-pickup" target="_blank" id="onthego">Foodtown-On-The-Go</a></li>
+      </ul>
     </div>
   </nav>
 
@@ -88,77 +89,57 @@
     </div>
   </div>
 
-  <div class="section no-pad-bot" id="index-banner">
+
+
+  <div class="section no-pad-bot">
     <div class="myContainer">
-      <br>
-      <div class="row center" id="header">
-        <a href="index.html">
-          <img src="img/foodtown_header02.jpg" />
-          <h3 class="header center" style="color:#FFF;text-shadow: 3px 3px 3px #004684;"><b>of Valley Cottage</b></h3>
-        </a>
+      <div class="section no-pad-bot parallax-container" id="header">
+        <div class="row center">
+          <img src="img/foodtown_header04.jpg" />
+        </div>
       </div>
-
     </div>
   </div>
 
-  <div class="section no-pad-bot" id="section">
+  <div class="section no-pad-bot" id="section" style="background-color:#004684;">
+    <div class="myContainer">
+      <div class="section">
+
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="row center">
+              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:4%;background-color:#d0383f">Weekly Circular</a>
+              <h5 class="center white-text">Check out the Featured Items</h5>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="row center">
+              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:4%;background-color:#FFF;border:2px solid #004684;color:#004684">Manager's Specials</a>
+              <h5 class="center white-text">This Week's Specials</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="no-pad-bot" id="section">
     <div class="myContainer" style="background-color:#FFF;" id="steak">
-      <div class="section">
-
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="row center">
-              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:8%;background-color:#d0383f">Weekly Circular</a>
-              <h5 class="center white-text">This Week's Featured Items</h5>
-            </div>
-          </div>
-
-          <div class="col s12 m6">
-            <div class="row center">
-              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:8%;background-color:#004684">Manager's Specials</a>
-              <h5 class="center white-text" style="font-weight:bold;text-shadow: 2px 2px 2px #004684;">This Week's Specials</h5>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="section no-pad-bot" id="section">
-    <div class="myContainer" style="background-color:#FFF;" id="bakery">
-      <div class="section">
-
-        <div class="row">
-          <div class="col s12">
-            
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div> -->
-
-  <div class="section no-pad-bot" id="section">
-    <div class="myContainer" style="background-color:#004684;">
       <div class="section">
 
         <div class="row">
           <div class="col s12 m4">
             &nbsp;
-            <!-- <div class="icon-block">
-              <h1 class="center" style="color:#d0383f"><i class="medium material-icons">attach_money</i></h1>
-              <h5 class="center white-text">This Week's Featured Items</h5>
-              <p class="light white-text" style="text-align:center">Visit to checkout all of our promotions.</p>
-            </div> -->
           </div>
 
           <div class="col s12 m4">
             <div class="icon-block">
               <h1 class="center" style="color:#d0383f"><i class="medium material-icons">mail</i></h1>
-              <h5 class="center white-text">Sign Up</h5>
+              <h5 class="center white-text"><b>Sign Up</b></h5>
               <p class="light white-text" style="text-align:center">
-                Sign Up To Get Our Special Offers & Coupons
+                Enter Your Email to Receive Special Offers & Coupons
               </p>
               <form style="text-align:center;">
                 <label for="email">Email:</label><br>
@@ -170,11 +151,6 @@
 
           <div class="col s12 m4">
             &nbsp;
-            <!-- <div class="icon-block">
-              <h1 class="center" style="color:#d0383f"><i class="medium material-icons">local_offer</i></h1>
-              <h5 class="center white-text">Weekly Ad</h5>
-              <p class="light white-text" style="text-align:center">Click here to view our Weekly Ad</p>
-            </div> -->
           </div>
         </div>
 
@@ -254,6 +230,13 @@
     $(document).ready(function(){
     $('.sidenav').sidenav();
     });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+  });
   </script>
 
   </body>
