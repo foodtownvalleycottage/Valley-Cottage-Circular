@@ -24,11 +24,18 @@
     background-size:100%;
   }
 
+  #header1 {
+    background-image: url("img/foodtown_headerbg_01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-width:100%;
+  }
+
   #steak {
     background-image: url("img/foodtown_steakbg_02.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:100%;
+    background-width:100%;
   }
 
   .myContainer{
@@ -89,11 +96,9 @@
     </div>
   </div>
 
-
-
-  <div class="section no-pad-bot">
-    <div class="myContainer">
-      <div class="section no-pad-bot parallax-container" id="header">
+  <div class="no-pad-bot" id="section">
+    <div class="myContainer" id="header1">
+      <div class="section">
         <div class="row center">
           <img src="img/foodtown_header04.jpg" />
         </div>
@@ -101,21 +106,29 @@
     </div>
   </div>
 
-  <div class="section no-pad-bot" id="section" style="background-color:#004684;">
+  <div class="section no-pad-bot" style="background-color:#004684;">
     <div class="myContainer">
       <div class="section">
 
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s12 m4">
             <div class="row center">
-              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:4%;background-color:#d0383f">Weekly Circular</a>
+              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:12%;background-color:#d0383f">Weekly Circular</a>
               <h5 class="center white-text">Check out the Featured Items</h5>
             </div>
           </div>
 
-          <div class="col s12 m6">
+          <div class="col s12 m4">
             <div class="row center">
-              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:4%;background-color:#FFF;border:2px solid #004684;color:#004684">Manager's Specials</a>
+              <video width="360" height="360" autoplay="autoplay" loop="loop" controls muted>
+                <source src="img/FTVC_11.26.2021-SM_SALES.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="row center">
+              <a href="index.html" id="circular" class="btn-large waves-effect waves-light" style="margin-top:12%;background-color:#FFF;border:2px solid #004684;color:#004684">Manager's Specials</a>
               <h5 class="center white-text">This Week's Specials</h5>
             </div>
           </div>
@@ -126,7 +139,7 @@
   </div>
 
   <div class="no-pad-bot" id="section">
-    <div class="myContainer" style="background-color:#FFF;" id="steak">
+    <div class="myContainer" id="steak">
       <div class="section">
 
         <div class="row">
